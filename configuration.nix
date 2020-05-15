@@ -33,6 +33,10 @@
       htop
       killall
       kitty
+      clang-manpages
+      posix_man_pages
+      man-db
+      man-pages
       meson
       neofetch
       oh-my-zsh
