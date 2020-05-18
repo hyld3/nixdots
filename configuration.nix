@@ -12,50 +12,53 @@
 
   networking.hostName = "texas";
 
+nixpkgs.config.allowUnfree = true; 
   # The very essential shit I use.
   environment = {
     systemPackages = with pkgs; [
+      acpi
       bat
       bspwm
       chromium
       clang
+      clang-manpages
       curl
       dmenu
       emacs
       fd
-      file
       feh
+      file
+      fzf
       gdb
       gdb-multitarget
       git
-      ninja
       gnome3.evince # Least retarded pdf viewer for latex
       htop
       killall
       kitty
-      clang-manpages
-      posix_man_pages
+      llvm
       man-db
       man-pages
       meson
       neofetch
+      ninja
       oh-my-zsh
+      open-vm-tools
       polybar
+      posix_man_pages
       pywal
       rofi
       scrot
       spotify
       sxhkd
       tcpdump
+      texlive.combined.scheme-medium
       wget
       xlibs.xbacklight
       xlibs.xmodmap
       xorg.xinit
       zsh
       zsh
-      acpi
-      fzf
-      llvm
     ];
   };
   # Use the GRUB 2 boot loader.
