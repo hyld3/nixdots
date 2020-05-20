@@ -7,7 +7,7 @@ FILES=(${HOME}/.config
 for i in "${FILES[@]}";
 do
     rsync -avhz \
-    	  --exclude "kitty-themes" \
+    	  --exclude={'kitty-themes','*chromium*','*glib-*','*gtk-*'} \
     	  --copy-links \
     	  $i $(basename $i | sed 's/^\.//')
 done

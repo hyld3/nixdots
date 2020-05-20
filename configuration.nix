@@ -44,6 +44,7 @@ nixpkgs.config.allowUnfree = true;
       ninja
       oh-my-zsh
       open-vm-tools
+      openvpn
       polybar
       posix_man_pages
       pywal
