@@ -12,7 +12,8 @@
 
   networking.hostName = "texas";
 
-nixpkgs.config.allowUnfree = true; 
+  nixpkgs.config.allowUnfree = true;
+  
   # The very essential shit I use.
   environment = {
     systemPackages = with pkgs; [
@@ -45,20 +46,21 @@ nixpkgs.config.allowUnfree = true;
       oh-my-zsh
       open-vm-tools
       openvpn
+      python38Packages.pip
       polybar
       posix_man_pages
       pywal
+      python38
       rofi
       scrot
       spotify
       sxhkd
       tcpdump
-      texlive.combined.scheme-medium
+      texlive.combined.scheme-full # Sure its bloated, but that one tex package you are looking for is never in -medium
       wget
       xlibs.xbacklight
       xlibs.xmodmap
       xorg.xinit
-      zsh
       zsh
     ];
   };
