@@ -33,6 +33,7 @@
       gdb
       gdb-multitarget
       git
+      global
       gnome3.evince # Least retarded pdf viewer for latex
       htop
       killall
@@ -47,6 +48,7 @@
       open-vm-tools
       openvpn
       python38Packages.pip
+      python38Packages.pwntools
       polybar
       posix_man_pages
       pywal
