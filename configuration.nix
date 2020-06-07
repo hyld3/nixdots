@@ -43,6 +43,7 @@
       man-db
       man-pages
       meson
+      ncat
       neofetch
       ninja
       oh-my-zsh
