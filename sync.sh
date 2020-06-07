@@ -11,3 +11,7 @@ do
     	  --copy-links \
     	  $i $(basename $i | sed 's/^\.//')
 done
+
+git add .  &&
+	git commit -m "." &&
+		git push origin master

@@ -39,6 +39,7 @@
       killall
       kitty
       llvm
+      llvmPackages.bintools
       man-db
       man-pages
       meson
@@ -59,6 +60,7 @@
       sxhkd
       tcpdump
       texlive.combined.scheme-full # Sure its bloated, but that one tex package you are looking for is never in -medium
+      vagrant
       wget
       xlibs.xbacklight
       xlibs.xmodmap
