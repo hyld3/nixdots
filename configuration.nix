@@ -11,7 +11,6 @@
     ];
 
   networking.hostName = "texas";
-
   nixpkgs.config.allowUnfree = true;
   
   # The very essential shit I use.
@@ -25,6 +24,7 @@
       clang-manpages
       curl
       dmenu
+      docker
       emacs
       fd
       feh
@@ -73,16 +73,10 @@
   boot.loader.grub.enable = true;
   boot.loader.grub.version = 2;
 
-  ## EFI ON VMWARE, GOOD LUCK FAM. 
-  # boot.loader.grub.efiSupport = true; 
-  # boot.loader.grub.efiInstallAsRemovable = true;
-  # boot.loader.efi.efiSysMountPoint = "/boot/efi";
   # Define on which hard drive you want to install Grub.
-  
   boot.loader.grub.device = "/dev/sda"; # or "nodev" for efi only
 
-  # networking.hostName = "nixos"; # Define your hostname.
-  # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
+  networking.wireless.enable = false;  # Enables wireless support via wpa_supplicant.
 
   # The global useDHCP flag is deprecated, therefore explicitly set to false here.
   # Per-interface useDHCP will be mandatory in the future, so this generated config
@@ -106,9 +100,6 @@
 
   # List packages installed in system profile. To search, run:
   # $ nix search wget
-  # environment.systemPackages = with pkgs; [
-  #   wget vim
-  # ];
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
@@ -163,8 +154,6 @@
  # Enable the KDE Desktop Environment.
  
   services.xserver.windowManager.bspwm.enable = true;
-  # services.xserver.windowManager.bspwm.configFile = "/home/hyld3/.config/bspwm/bspwmrc";
-  # services.xserver.windowManager.bspwm.sxhkd.configFile = "/home/hyld3/.config/sxhkd/sxhkdrc";
   services.xserver.displayManager.lightdm.enable = true;
   services.xserver.displayManager.defaultSession = "none+bspwm";
 
