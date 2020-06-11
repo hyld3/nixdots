@@ -33,6 +33,7 @@
       gdb
       gdb-multitarget
       git
+      gobuster
       global
       gnome3.evince # Least retarded pdf viewer for latex
       htop
@@ -61,6 +62,7 @@
       sxhkd
       tcpdump
       texlive.combined.scheme-full # Sure its bloated, but that one tex package you are looking for is never in -medium
+      tmux
       vagrant
       wget
       xlibs.xbacklight
